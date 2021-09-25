@@ -1,0 +1,107 @@
+/* Table 1 */
+.table-scroll {
+	position:relative;
+	max-width:600px;
+	margin:auto;
+	overflow:hidden;
+	border:1px solid white;
+}
+.table-wrap {
+	width:100%;
+	overflow:auto;
+}
+.table-scroll table {
+	width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0;
+}
+.table-scroll th, .table-scroll td {
+	padding:5px 10px;
+	border:1px solid white;
+	background:#fff;
+	white-space:nowrap;
+	vertical-align:top;
+}
+.table-scroll thead, .table-scroll tfoot {
+	background:#f9f9f9;
+}
+.clone {
+	position:absolute;
+	top:0;
+	left:0;
+	pointer-events:none;
+}
+.clone th, .clone td {
+	visibility:hidden
+}
+.clone td, .clone th {
+	border-color:transparent
+}
+.clone tbody th {
+	visibility:visible;
+	color:black;
+}
+.clone .fixed-side {
+	border:1px solid white;
+	background:#f3c332;
+	visibility:visible;
+}
+.clone thead, .clone tfoot{background:transparent;}
+/* Table 1 */
+
+
+
+
+
+/* Table 2 */
+.table-scroll2 {
+	position:relative;
+	max-width:600px;
+	margin:auto;
+	overflow:hidden;
+	border:1px solid white;
+}
+.table-wrap2 {
+	width:100%;
+	overflow:auto;
+}
+.table-scroll2 table {
+	width:100%;
+	margin:auto;
+	border-collapse:separate;
+	border-spacing:0;
+}
+.table-scroll2 th, .table-scroll2 td {
+	padding:5px 10px;
+	border:1px solid white;
+	background:#fff;
+	white-space:nowrap;
+	vertical-align:top;
+}
+.table-scroll2 thead, .table-scroll2 tfoot {
+	background:#f9f9f9;
+}
+.clone2 {
+	position:absolute;
+	top:0;
+	left:0;
+	pointer-events:none;
+}
+.clone2 th, .clone2 td {
+	visibility:hidden
+}
+.clone2 td, .clone2 th {
+	border-color:transparent
+}
+.clone2 tbody th {
+	visibility:visible;
+	color:black;
+}
+.clone2 .fixed-side2 {
+	border:1px solid white;
+	background:#f3c332;
+	visibility:visible;
+}
+.clone2 thead, .clone2 tfoot{background:transparent;}
+/* Table 2 */
