@@ -1,381 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <title>GKI Palsigunung</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-touch-fullscreen" content="yes" />
-    <meta name="HandheldFriendly" content="True" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <!-- Bootstrap v4.3.1 CSS -->
-    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css" />
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/theme.css" />
-    <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="lib/slick/slick/slick-theme.css"
-    />
-    <!-- Magnific Popup core CSS file -->
-    <link
-      rel="stylesheet"
-      href="lib/Magnific-Popup-master/dist/magnific-popup.css"
-    />
-    <!-- Font Awesome Free 5.10.2 CSS JS -->
-    <link href="lib/fontawesome-free-5.10.2-web/css/all.css" rel="stylesheet" />
-    <script defer src="lib/fontawesome-free-5.10.2-web/js/brands.js"></script>
-    <script defer src="lib/fontawesome-free-5.10.2-web/js/solid.js"></script>
-    <script
-      defer
-      src="lib/fontawesome-free-5.10.2-web/js/fontawesome.js"
-    ></script>
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<title>GKI Palsigunung</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="HandheldFriendly" content="True">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<!-- Bootstrap v4.3.1 CSS -->
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/table.css">
+		<!-- Slick CSS -->
+		<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="lib/slick/slick/slick-theme.css">
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="lib/Magnific-Popup-master/dist/magnific-popup.css">
+		<!-- Font Awesome Free 5.10.2 CSS JS -->
+		<link href="lib/fontawesome-free-5.10.2-web/css/all.css" rel="stylesheet">
+		<script defer src="lib/fontawesome-free-5.10.2-web/js/brands.js"></script>
+		<script defer src="lib/fontawesome-free-5.10.2-web/js/solid.js"></script>
+		<script defer src="lib/fontawesome-free-5.10.2-web/js/fontawesome.js"></script>
+		
+		<style>
 
-    <style>
-      table {
-        border-collapse: collapse;
-        width: 100%;
-      }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
-      th,
-      td {
-        text-align: left;
-        padding: 8px;
-      }
+th, td {
+  text-align: left;
+  padding: 8px;
+}
 
-      tr:nth-child(even) {
-        background-color: #ffdf9b;
-      }
-    </style>
-  </head>
-  <body class="default">
-    <!-- Preloading -->
-    <div class="preloading">
-      <div class="wrap-preload">
-        <div class="cssload-loader"></div>
-      </div>
-    </div>
-    <!-- .Preloading -->
-    <!-- Sidebar left -->
-    <!-- <nav id="sidebarleft" class="sidenav" >
-			<div id="dismiss">
-				<i class="fas fa-times"></i>
+tr:nth-child(even) {background-color: #ffdf9b;}
+
+		</style>
+	</head>
+	<body class="default">
+		
+		<!-- Preloading -->
+		<div class="preloading">
+			<div class="wrap-preload">
+				<div class="cssload-loader"></div>
 			</div>
-			<div class="sidebar-header"> -->
-    <!-- <h3>Accounta</h3> -->
-    <!-- <div class="logo"  style="margin-right: 10px;"><img src="img/logo.png"></div>
-			</div>
-			<div class="sdprofile">
-				<div class="sdp-left">
-					<img src="img/me.jpg" alt="profile">
-				</div>
-				<div class="sdp-right">
-					<div class="sd-name">Markus Roberto</div>
-					<div class="sd-status">The lamb of God</div>
-				</div>
-			</div>
-			<ul class="list-unstyled components">
-				<li>
-					<a href="https://robertomarkus.github.io/gkipalsi/index.html"><i class="fas fa-church"></i>Beranda</a>
-				</li>
-				<li>
-					<a href="#jadwalkebaktian" data-toggle="collapse" aria-expanded="false"><i class="fas fa-clipboard-list"></i>Jadwal Kebaktian<span><i class="fas fa-caret-down"></i></span></a>
-					<ul class="collapse collapsible-body" id="jadwalkebaktian">
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/jadwalkebaktian.html">Jadwal Kebaktian</a>
-						</li>
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/lagutemabacaan.html">Lagu, Tema & Bacaan</a>
-						</li>
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/jadwalpelayanibadah.html">Jadwal Pelayan Ibadah</a>
-						</li>						
-					</ul>
-				</li>
-				<li>
-					<a href="#agenda" data-toggle="collapse" aria-expanded="false"><i class="fas fa-calendar-alt"></i>Agenda<span><i class="fas fa-caret-down"></i></span></a>
-					<ul class="collapse collapsible-body" id="agenda">
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/ulangtahunjemaat.html">Ulang Tahun Jemaat</a>
-						</li>
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/pelayananpastoral.html">Pelayanan Pastoral</a>
-						</li>
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/jadwalrapat.html">Jadwal Rapat</a>
-						</li>
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/persidanganmj.html">Persidangan Majelis Jemaat</a>
-						</li>
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/kesempatanmelayani.html">Kesempatan Pelayanan</a>
-						</li>
-						<li>
-							<a href="https://robertomarkus.github.io/gkipalsi-menu/timgugustugas.html">Tim Gugus Tugas</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#bidangkategorial" data-toggle="collapse" aria-expanded="false"><i class="fas fa-cross"></i>Bidang Kategorial<span><i class="fas fa-caret-down"></i></span></a>
-					<ul class="collapse collapsible-body" id="bidangkategorial">
-						<li>
-							<a href="#">Kebaktian Umum</a>
-						</li>
-						<li>
-							<a href="#">Kebaktian Anak</a>
-						</li>
-						<li>
-							<a href="#">Kebaktian Remaja</a>
-						</li>
-						<li>
-							<a href="#">Kebaktian Pemuda</a>
-						</li>
-						<li>
-							<a href="#">Kebaktian KUL</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<li>
-						<a href="#bidangpersekutuan" data-toggle="collapse" aria-expanded="false"><i class="fas fa-users"></i>Bidang Persekutuan<span><i class="fas fa-caret-down"></i></span></a>
-						<ul class="collapse collapsible-body" id="bidangpersekutuan">
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/pelayananpak.html">Pelayanan P.A.K</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/keanggotaan.html">Keanggotaan</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/jadwalbaptis.html">Jadwal Baptis</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/komisiperlawatan.html">Komisi Perlawatan</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/pernikahangerejawi.html">Pernikahan Gerejawi</a>
-							</li>
-						</ul>
-					</li>
-				</li>
-				<li>
-					<li>
-						<a href="#bidangperibadahan" data-toggle="collapse" aria-expanded="false"><i class="fas fa-praying-hands"></i>Bidang Peribadahan<span><i class="fas fa-caret-down"></i></span></a>
-						<ul class="collapse collapsible-body" id="bidangperibadahan">
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/persiapanpelayanan.html">Persiapan Pelayanan</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/kebaktianlingkungan.html">Kebaktian Lingkungan</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/jadwalsmm.html">Jadwal SMM</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/persekutuandoapagi.html">Persekutuan Doa Pagi</a>
-							</li>							
-						</ul>
-					</li>
-				</li>
-				<li>
-					<li>
-						<a href="#bidangoikmas" data-toggle="collapse" aria-expanded="false"><i class="fas fa-calendar-plus"></i>Bidang Oikmas<span><i class="fas fa-caret-down"></i></span></a>
-						<ul class="collapse collapsible-body" id="bidangoikmas">
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/kotakpeduli.html">Kotak Peduli</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/komisibeasiswa.html">Komisi Beasiswa</a>
-							</li>
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/pelayanankesehatan.html">Pelayanan Kesehatan</a>
-							</li>							
-						</ul>
-					</li>
-				</li>
-				<li>
-					<li>
-						<a href="#keuangan" data-toggle="collapse" aria-expanded="false"><i class="fas fa-coins"></i>Keuangan<span><i class="fas fa-caret-down"></i></span></a>
-						<ul class="collapse collapsible-body" id="keuangan">
-							<li>
-								<a href="https://robertomarkus.github.io/gkipalsi-menu/keuangan.html">Rekapitulasi Persembahan</a>
-							</li>						
-						</ul>
-					</li>
-				</li>
-					<li>
-						<a href="https://robertomarkus.github.io/gkipalsi-menu/kegiatanmingguini.html"><i class="fas fa-calendar-week"></i>Kegiatan Minggu Ini</a>
-					</li>
-					<li>
-						<a href="https://robertomarkus.github.io/gkipalsi-menu/klinikhukum.html"><i class="fas fa-gavel"></i>Klinik Hukum</a>
-					</li>
-					<li>
-						<a href="https://robertomarkus.github.io/gkipalsi-menu/lowongankerja.html"><i class="fas fa-id-card"></i>Lowongan Kerja</a>
-					</li>
-					<li>
-						<a href="https://robertomarkus.github.io/gkipalsi-menu/tentanggereja.html"><i class="fas fa-newspaper"></i>Tentang Gereja</a>
-					</li>
-					<li>
-						<a href="https://robertomarkus.github.io/gkipalsi-menu/kontakgereja.html"><i class="fas fa-address-book"></i>Kontak Gereja</a>
-					</li>
-					
-			</nav> -->
-    <!-- Sidebar left -->
+		</div>
+		<!-- .Preloading -->
+	
 
-    <!-- Sidebar right -->
-    <!-- <nav id="sidebarright" class="sidenav">
-				<div id="dismiss">
-					<i class="fas fa-times"></i>
-				</div>
-				<div class="sidebar-header">
-					<h3>Notifikasi</h3>
-				</div>
-				<ul class="right-menu">
-					
-					<li class="right-menu-item">
-						<a href="#">
-							<i class="fas fa-envelope"></i>
-							<div class="ntitle">Notifkasi 1</div>
-							<div class="desc">lorem ipsum dolor sit amet...</div>
-						</a>
-					</li>
-					<li class="right-menu-item">
-						<a href="#">
-							<i class="fas fa-star"></i>
-							<div class="ntitle">Notifkasi 2</div>
-							<div class="desc">lorem ipsum dolor sit amet...</div>
-						</a>
-					</li>
-					<li class="right-menu-item">
-						<a href="#">
-							<i class="fas fa-car-alt"></i>
-							<div class="ntitle">Notifkasi 3</div>
-							<div class="desc">lorem ipsum dolor sit amet...</div>
-						</a>
-					</li>
-					<li class="right-menu-item">
-						<a href="#">
-							<i class="fas fa-ticket-alt"></i>
-							<div class="ntitle">Notifkasi 4</div>
-							<div class="desc">lorem ipsum dolor sit amet...</div>
-						</a>
-					</li>
-					<li class="right-menu-item">
-						<a href="#">
-							<i class="fas fa-envelope"></i>
-							<div class="ntitle">Notifkasi 5</div>
-							<div class="desc">lorem ipsum dolor sit amet...</div>
-						</a>
-					</li>
-					
-				</ul>
-			</nav> -->
-    <!-- .Sidebar right-->
+<!-- Content  -->
+<div id="">
+	<br>
+	<!-- <div class="content-wrap page-news">
+<br>	   -->
+<h6 class="page_title" style="text-align: center; font-weight: bold; margin-left: 5%; margin-right: 5%;">PENDETA & PELAYANAN PASTORAL DI MASA COVID-19, DAPAT DILAKUKAN LEWAT
+          TELPON / WHATSAPP</h6>
+<br>
+   <div id="table-scroll" class="table-scroll">
+	<div class="table-wrap">
+	  <table class="main-table">
+		<thead>
+		  <tr>
+			<th scope="col" style="vertical-align: middle; background: #f3c332; text-align: center; position: sticky;">Pendeta GKI Palsigunung</th>
+			<th scope="col" style="text-align: center; background: #f3c332; vertical-align: middle; position: sticky;">Nomor Kontak</th>
+			
+		  </tr>
+		</thead>
+		<tbody>
+			
+		  <tr>
+			<!-- <th class="fixed-side" style="vertical-align: middle; text-align: center;">Pdt. Em Soemartono Patriabara</th> -->
+			<td style="background: #ffe7a0; text-align: left; ">Pdt. Em Soemartono Patriabara</td>
+			<td style="background: #ffe7a0; text-align: left; ">081287072455</td>
+		  </tr>
+		  <tr>
+			<!-- <th class="fixed-side" style="vertical-align: middle; text-align: center;">03</th> -->
+			<td style="background: #f1f1f1; text-align: left; ">Pdt. Johanes I Tuwaidan, M.Min</td>
+			<td style="background: #f1f1f1; text-align: left; ">08567750101 (WA)</td>
+		  </tr>
+		  <tr>
+			<!-- <th class="fixed-side" style="vertical-align: middle; text-align: center;">03</th> -->
+			<td style="background: #ffe7a0; text-align: left; ">Pdt. Boas P Tarigan, STh</td>
+			<td style="background: #ffe7a0; text-align: left; ">08158866383</td>
+		  </tr>
+		 		  
+		</tbody>		
+	  </table>
+	  <br>
+	  <p style="margin-left: 5%;">Jadwal Pelayanan Pastoral / Konseling / Pada Hari Kerja Pukul : 10.00
+          – 12.00, sebagai berikut:</p>
+	  <br>
 
-    <!-- Header  -->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-header">
-				<div class="container-fluid">
-					<button type="button" id="sidebarleftbutton" class="btn">
-					<i class="fas fa-align-left"></i>
-					</button>
-					<div class="logo"><img src="img/logo.png"></div>
-					<button type="button" id="sidebarrightbutton" class="btn">
-					<div class="notif">
-						<i class="fas fa-bell"></i>
-						<i class="fas fa-circle "></i>
-					</div>
-					</button>
-				</div>
-			</nav> -->
-    <!-- .Header  -->
 
-    <!-- Content  -->
-    <div id="content">
-      <div class="content-wrap page-news">
-        <br />
-        <h6 class="page_title" style="text-align: center; font-weight: bold">
-          PENDETA & PELAYANAN PASTORAL DI MASA COVID-19, DAPAT DILAKUKAN LEWAT
-          TELPON / WA
-        </h6>
-        <br />
-        <!-- <div class="page_single layout_fullheight_padding"> -->
+	</div>
+  </div>
 
-        <iframe
-          width="100%"
-          height="100px"
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRa-hZq0XtL8ekDrC-8ADMnuMcHVS2Pm_LbUT4gZXqLkg7I0ARP-QI-uEwCazz7dBLO01UiSeR8AlAU/pubhtml?gid=442911748&amp;single=true&amp;range=a1:b4&amp;widget=false&amp;chrome=false"
-          frameborder="0"
-          allowfullscreen="true"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        ></iframe>
-        <span>&NonBreakingSpace;</span>
-        <p style="text-align: center">
-          Jadwal Pelayanan Pastoral / Konseling / Pada Hari Kerja Pukul : 10.00
-          – 12.00, sebagai berikut:
-        </p>
-        <iframe
-          width="100%"
-          height="300px"
-          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRa-hZq0XtL8ekDrC-8ADMnuMcHVS2Pm_LbUT4gZXqLkg7I0ARP-QI-uEwCazz7dBLO01UiSeR8AlAU/pubhtml?gid=442911748&amp;single=true&amp;range=d1:f10&amp;widget=false&amp;headers=false&amp;chrome=false"
-          frameborder="0"
-          allowfullscreen="true"
-          mozallowfullscreen="true"
-          webkitallowfullscreen="true"
-        ></iframe>
-      </div>
-    </div>
 
-    <!-- .Content  -->
+   <div id="table-scroll" class="table-scroll">
+	<div class="table-wrap">
+	  <table class="main-table">
+		<thead>
+		  <tr>
+			<th scope="col" style="vertical-align: middle; background: #f3c332; text-align: center; position: sticky;">Hari</th>
+			<th scope="col" style="text-align: center; background: #f3c332; vertical-align: middle; position: sticky;">Pendeta GKI Palsigunung</th>
+			<th scope="col" style="text-align: center; background: #f3c332; vertical-align: middle; position: sticky;">Tempat</th>			
+		  </tr>
+		</thead>
+		<tbody>
+			
+		  <tr>			
+			<td style="background: #ffe7a0; vertical-align: middle; text-align: center; text-align: left; " rowspan="2">Selasa</td>
+			<td style="background: #ffe7a0; text-align: left; ">Pdt. Johanes I Tuwaidan, M.Min</td>
+			<td style="background: #ffe7a0; vertical-align: middle; text-align: center; text-align: left; " rowspan="2">Gereja Jl Duta Pelni 12 Cisalak</td>
+		  </tr>
+		  <tr>
+			<td style="background: #ffe7a0; text-align: left; ">Pdt. Boas P Tarigan, STh</td>
+		  </tr>
 
-    <!-- Botom Panel  -->
-    <div class="bottom-panel">
-      <div class="bp-col">
-        <a href="https://robertomarkus.github.io/gkipalsi">
-          <div class="bp-icon"><img src="img/iphome.png" alt="icon" /></div>
-          <div class="bp-text">Beranda</div>
-        </a>
-      </div>
-      <div class="bp-col">
-        <a href="#">
-          <div class="bp-icon"><img src="img/ialkitab.png" alt="icon" /></div>
-          <div class="bp-text">Alkitab</div>
-        </a>
-      </div>
-      <div class="bp-col">
-        <a href="#">
-          <div class="bp-icon"><img src="img/ikidung.png" alt="icon" /></div>
-          <div class="bp-text">Kidung</div>
-        </a>
-      </div>
-      <div class="bp-col">
-        <a href="#">
-          <div class="bp-icon"><img src="img/ipaccount.png" alt="icon" /></div>
-          <div class="bp-text">Account</div>
-        </a>
-      </div>
-    </div>
-    <!-- .Bottom Panel  -->
+		   <tr>			
+			<td style="background: #f1f1f1; vertical-align: middle; text-align: center; text-align: left; " rowspan="2">Rabu</td>
+			<td style="background: #f1f1f1; text-align: left; ">Pdt. Johanes I Tuwaidan, M.Min</td>
+			<td style="background: #f1f1f1; text-align: left; ">Gereja Jl Duta Pelni 12 Cisalak</td>
+		  </tr>
+		  <tr>
+			<td style="background: #f1f1f1; text-align: left; ">Pdt. Boas P Tarigan, STh</td>
+			<td style="background: #f1f1f1; text-align: left; ">Gereja Bajem Ciracas</td>
+		  </tr>
+		  
+		  <tr>			
+			<td style="background: #ffe7a0; vertical-align: middle; text-align: center; text-align: left; " rowspan="2">Kamis</td>
+			<td style="background: #ffe7a0; text-align: left; ">Pdt. Johanes I Tuwaidan, M.Min</td>
+			<td style="background: #ffe7a0; text-align: left; ">Gereja Bajem Cilodong</td>
+		  </tr>
+		  <tr>
+			<td style="background: #ffe7a0; text-align: left; ">Pdt. Boas P Tarigan, STh</td>
+			<td style="background: #ffe7a0; text-align: left; ">Gereja Jl Duta Pelni 12 Cisalak</td>
+		  </tr>
 
-    <div class="overlay"></div>
+		   <tr>			
+			<td style="background: #f1f1f1; vertical-align: middle; text-align: center; text-align: left; " rowspan="3">Jumat</td>
+			<td style="background: #f1f1f1; text-align: left; ">Pdt. Johanes I Tuwaidan, M.Min</td>
+			<td style="background: #f1f1f1; vertical-align: middle; text-align: center; text-align: left; " rowspan="2">Gereja Jl Duta Pelni 12 Cisalak</td>
+		  </tr>
+		  <tr>
+			<td style="background: #f1f1f1; text-align: left; ">Pdt. Boas P Tarigan, STh</td>
+			
+		  </tr>
+		  <tr>
+			<td style="background: #f1f1f1; text-align: left; ">Pdt. Em Soemartono Patriabara</td>
+			<td style="background: #f1f1f1; text-align: left; ">Dengan Perjanjian</td>
+		  </tr>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery v3.4.1 -->
-    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
-    <!--  Bootstrap v4.3.1 JS -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <!-- Magnific Popup core JS file -->
-    <script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
-    <!-- Slick JS -->
-    <script src="lib/slick/slick/slick.min.js"></script>
-    <!--  Custom JS -->
-    <script src="js/theme.js"></script>
-  </body>
-</html>
+		 		  
+		</tbody>		
+	  </table>
+
+	</div>
+  </div>
+
+
+</div>
+</div>
+</div>
+
+            
+<!-- .Content  -->
+
+	  
+	
+			
+			<!-- <div class="overlay"></div> -->
+			
+			<!-- Optional JavaScript -->
+			<!-- jQuery v3.4.1 -->
+			<script src="lib/jquery/jquery-3.4.1.min.js"></script>
+			<!--  Bootstrap v4.3.1 JS -->
+			<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+			<!-- Magnific Popup core JS file -->
+			<script src="lib/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
+			<!-- Slick JS -->
+			<script src="lib/slick/slick/slick.min.js"></script>
+			<!--  Custom JS -->
+			<script src="js/theme.js"></script>
+
+			<script>
+				// requires jquery library
+			jQuery(document).ready(function() {
+   			jQuery(".main-table").clone(true).appendTo('#table-scroll').addClass('clone');   
+ 			});
+
+			</script>
+			
+		</body>
+	</html>
